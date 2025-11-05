@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - InternTrust</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">InternTrust</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="https://forms.gle/TMwuXnyfGG6VTFK2A" target="_blank">Raise Concern</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+        <div class="container">
+            <div class = "about-main">
+                <p>Hello! I’m <br> <span class="name animate-name">Aashik Riyaz,</span></p>
+                <p> the creator of InternBuster.</p>
+            </div>
+            <div class = "about-sec">
+            <p>
+                I built this platform to help students and professionals
+                identify potential scams in the internship space. I believe that everyone deserves
+                genuine opportunities without being misled.
+            </p>
+            <p>Feel free to connect with me:</p>
+            <ul>
+                <li>Email: <br><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">aashikriyazm437@gmail.com</a></li>
+            </ul>
+        </div>
+        </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 InternTrust| <a href="index.html">Home</a> | <a href="https://forms.gle/TMwuXnyfGG6VTFK2A" target="_blank" >Raise Concern</a></p>
+    </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const nameElement = document.querySelector('.name');
+            nameElement.addEventListener('animationend', () => {
+                nameElement.classList.remove('animate-name');
+                nameElement.classList.add('final-name');
+            });
+        });
+    </script>
+
+</body>
+</html>
